@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moazz alsadeq - front-end 📊</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <title> Alsadeq</title>
     <style>
         * {
             margin: 0;
@@ -495,28 +497,52 @@
 
         .contact-links {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 2rem;
+            gap: 1rem;
             margin-top: 2rem;
         }
 
         .contact-link {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            padding: 0;
             color: #ffffff;
             text-decoration: none;
-            padding: 1rem 1.5rem;
             background: rgba(255, 255, 255, 0.1);
-            border-radius: 50px;
+            border-radius: 50%;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(100, 255, 218, 0.2);
             transition: all 0.3s ease;
         }
 
+        .contact-link svg {
+            width: 24px;
+            height: 24px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .contact-icon-text {
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
         .contact-link:hover {
             background: rgba(100, 255, 218, 0.2);
             transform: translateY(-3px);
+        }
+
+        .contact-link:focus-visible {
+            outline: 2px solid #64ffda;
+            outline-offset: 3px;
         }
 
         /* Responsive Design */
@@ -552,8 +578,7 @@
             }
 
             .contact-links {
-                flex-direction: column;
-                align-items: center;
+                gap: 0.75rem;
             }
         }
 
@@ -621,10 +646,10 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <img src=".//moazzalsadeq.jpeg" alt="moazz alsadeq" class="hero-photo" id="heroPhoto">
+            <img src="./moo.jpg" alt="moazz alsadeq" class="hero-photo" id="heroPhoto">
             <h1>👋 moazz alsadeq</h1>
             <h2>front-end developer</h2>
-            <p>🔍 Transforming messy data into actionable insights that drive results. I don't just create dashboards; I provide answers to real business questions—enabling faster decisions, clearer directions, and better outcomes. ✨</p>
+            <p>💻 I build responsive, engaging websites with React, JavaScript, and modern front-end tools, focusing on clean interfaces and smooth user experiences. ✨</p>
             <a href="#contact" class="cta-button">🤝 Let's Work Together</a>
         </div>
     </section>
@@ -634,40 +659,41 @@
         <h3>👨‍💻 About Me</h3>
         <div class="about-content">
             <div class="about-text">
-                <p>👋 Hi, I'm moazz alsadeq, a Fourth-year cs student at Misr University for Science and Technology. I specialize in transforming messy data into actionable insights that drive results. 📈</p>
+                <p>👋 Hi, I'm moazz alsadeq, a Computer Science graduate from Misr University for Science and Technology, focused on building responsive, user-friendly web experiences. 💻</p>
                 <br>
                 <p>🛠️ Here are the tools I use:</p>
                 <ul style="margin: 1rem 0; padding-left: 1.5rem; line-height: 1.8;">
-                    <li><strong>📊 git-hup:</strong> for quick and precise analysis</li>
-                    <li><strong>🗄️ tawlind-css:</strong> to extract exactly the data you need</li>
-                    <li><strong>🐍 gsap:</strong> to explore deeper insights and automate tasks</li>
-                    <li><strong>📈 html-5:</strong> to turn numbers into compelling stories that anyone can understand</li>
+                    <li><strong>🐙 GitHub:</strong> to host projects and collaborate using Git</li>
+                    <li><strong>🎨 Tailwind CSS:</strong> to build responsive interfaces with utility classes</li>
+                    <li><strong>🎞️ GSAP:</strong> to create smooth, interactive web animations</li>
+                    <li><strong>🧱 HTML5:</strong> to structure accessible web pages</li>
+                    <li><strong>🌐 Axios:</strong> to make HTTP requests and work with API data</li>
                 </ul>
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h4>📊 Excel</h4>
-                    <p>Advanced analysis & modeling</p>
+                    <h4>🌐 Axios</h4>
+                    <p>Sending HTTP requests to APIs</p>
                 </div>
                 <div class="skill-card">
-                    <h4>🗄️ gsap</h4>
-                    <p>Data extraction & management</p>
+                    <h4>🎞️ GSAP</h4>
+                    <p>Smooth, interactive animations</p>
                 </div>
                 <div class="skill-card">
-                    <h4>🐍 html</h4>
-                    <p>Data science & automation</p>
+                    <h4>🧱 HTML5</h4>
+                    <p>Semantic structure for web pages</p>
                 </div>
                 <div class="skill-card">
-                    <h4>📈 css</h4>
-                    <p>Interactive dashboards</p>
+                    <h4>🎨 CSS</h4>
+                    <p>Styling and responsive layouts</p>
                 </div>
                 <div class="skill-card">
-                    <h4>☁️ react-js</h4>
-                    <p>Cloud data solutions</p>
+                    <h4>⚛️ React</h4>
+                    <p>Building reusable UI components</p>
                 </div>
                 <div class="skill-card">
-                    <h4>🤖 java-script</h4>
-                    <p>Predictive analytics</p>
+                    <h4>📜 JavaScript</h4>
+                    <p>Interactive behavior and application logic</p>
                 </div>
             </div>
         </div>
@@ -677,50 +703,72 @@
 
     <!-- Experience Section -->
     <section id="experience" class="section">
-        <h3>💼 Experience</h3>
+        <h3>💼 Frontend Experience</h3>
         <div class="experience-timeline">
             <div class="timeline-line"></div>
             
             <div class="experience-item">
                 <div class="experience-card">
-                    <div class="experience-title">Data Analytics - Microsoft Power BI Specialist</div>
-                    <div class="experience-company">Digital Egypt Pioneers Initiative (DEPI)</div>
-                    <div class="experience-date">📅 June 2025 - Present</div>
+                    <div class="experience-title">Responsive Web Development</div>
+                    <div class="experience-company">Personal Projects</div>
+                    <div class="experience-date">HTML5 · CSS · JavaScript</div>
                     <div class="experience-description">
-                        <p>🔍 Analyzing real-world datasets using Power BI to extract insights and build interactive dashboards. Applied DAX and Power Query to clean, transform, and model structured data. 📈</p>
+                        <p>Building structured, responsive web pages with semantic HTML and CSS layouts, then adding interactive behavior with JavaScript.</p>
                     </div>
                 </div>
             </div>
 
             <div class="experience-item">
                 <div class="experience-card">
-                    <div class="experience-title">Data Analyst</div>
-                    <div class="experience-company">Elevvo Pathways</div>
-                    <div class="experience-date">📅 July 2025 - Aug 2025</div>
+                    <div class="experience-title">React UI Development</div>
+                    <div class="experience-company">Personal Projects</div>
+                    <div class="experience-date">React</div>
                     <div class="experience-description">
-                        <p>💼 Working on various data analysis projects, providing insights and recommendations to support business growth and decision-making. 📈</p>
+                        <p>Creating reusable React components and composing them into clear, maintainable user interfaces.</p>
                     </div>
                 </div>
             </div>
 
             <div class="experience-item">
                 <div class="experience-card">
-                    <div class="experience-title">Data Analytics Bootcamp</div>
-                    <div class="experience-company">EYouth</div>
-                    <div class="experience-date">📅 April 2025 - May 2025</div>
+                    <div class="experience-title">API Integration</div>
+                    <div class="experience-company">Personal Projects</div>
+                    <div class="experience-date">Axios · JavaScript</div>
                     <div class="experience-description">
-                        <p>⚡ Completed intensive bootcamp focused on Azure cloud solutions, SQL database management, and automation tools for streamlined data workflows. ☁️</p>
+                        <p>Connecting frontend interfaces to APIs with Axios and presenting retrieved data in a useful, readable way.</p>
                     </div>
                 </div>
             </div>
 
             <div class="experience-item">
                 <div class="experience-card">
-                    <div class="experience-title">Data Science Intern</div>
-                    <div class="experience-company">CodSoft</div>
-                    <div class="experience-date">📅 March 2025 - April 2025</div>
+                    <div class="experience-title">Interactive Web Animations</div>
+                    <div class="experience-company">Personal Projects</div>
+                    <div class="experience-date">GSAP</div>
                     <div class="experience-description">
-                        <p>🎯 Hands-on experience in data analysis, machine learning, and data visualization techniques. Enhanced classification accuracy by 12% through feature engineering. 📊</p>
+                        <p>Using GSAP to add purposeful motion and engaging animations to web interfaces.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-card">
+                    <div class="experience-title">Responsive UI Styling</div>
+                    <div class="experience-company">Personal Projects</div>
+                    <div class="experience-date">Tailwind CSS</div>
+                    <div class="experience-description">
+                        <p>Styling responsive interfaces with utility classes and adapting layouts for different screen sizes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-card">
+                    <div class="experience-title">Project Version Control</div>
+                    <div class="experience-company">Personal Projects</div>
+                    <div class="experience-date">Git · GitHub</div>
+                    <div class="experience-description">
+                        <p>Tracking code changes with Git and hosting frontend projects on GitHub.</p>
                     </div>
                 </div>
             </div>
@@ -734,73 +782,96 @@
         <h3>🛠️ Featured Projects</h3>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-title">📊 Data Warehouse and Analytics Project</div>
+                <div class="project-title">🌿 Plant Disease Detection App</div>
                 <div class="project-description">
-                    🎯 A comprehensive data warehousing and analytics workflow showcasing industry standards in data engineering and business intelligence. Built a modern data warehouse using SQL Server, consolidating ERP and CRM data sources. Created interactive Power BI dashboards with drill-down capabilities for revenue, profit, and customer analytics. 📈
+                    Upload a plant image to analyze it and identify potential diseases. The app presents the detection result in a clear interface, with GSAP animations adding motion to the experience.
                 </div>
                 <div class="project-tech">
-                    <span class="tech-tag">🗄️ SQL Server</span>
-                    <span class="tech-tag">📈 Power BI</span>
-                    <span class="tech-tag">🔄 ETL</span>
-                    <span class="tech-tag">⭐ Star Schema</span>
-                    <span class="tech-tag">🧮 DAX</span>
+                    <span class="tech-tag">🖼️ Image Upload</span>
+                    <span class="tech-tag">🌱 Plant Disease Detection</span>
+                    <span class="tech-tag">🎞️ GSAP</span>
                 </div>
-                <a href="https://github.com/Mohamed2003123/SQL_Data_Warehouse_Project_and_SQL_Exploratory_Data_Analysis" class="github-link" target="_blank">🔗 View on GitHub</a>
+                <a href="https://plants-project-lszl.vercel.app/" class="github-link" target="_blank" rel="noopener noreferrer">🔗 Try the App</a>
             </div>
 
             <div class="project-card">
-                <div class="project-title">🏦 Banking Analytics Dashboard</div>
+                <div class="project-title">🍣 Kadri Restaurant Ordering Platform</div>
                 <div class="project-description">
-                    💰 Developed an end-to-end analytics dashboard using Azure, SQL, Python, and Power BI. Processed transaction records from cloud-hosted databases and delivered insights into customer behavior and loan trends. Reduced data analysis time by 40%. 📊
+                    A restaurant platform featuring sushi and traditional Egyptian hawawshi. Customers can browse the menu and order meals, while a dedicated admin dashboard supports restaurant management.
                 </div>
                 <div class="project-tech">
-                    <span class="tech-tag">☁️ Azure</span>
-                    <span class="tech-tag">🗄️ SQL</span>
-                    <span class="tech-tag">🐍 Python</span>
-                    <span class="tech-tag">📈 Power BI</span>
+                    <span class="tech-tag">🍱 Restaurant Menu</span>
+                    <span class="tech-tag">🛒 Online Ordering</span>
+                    <span class="tech-tag">🛠️ Admin Dashboard</span>
                 </div>
+                <a href="https://restaurantkk.vercel.app/" class="github-link" target="_blank" rel="noopener noreferrer">🔗 Visit Restaurant</a>
             </div>
 
             <div class="project-card">
-                <div class="project-title">🛒 Supermarket Sales Performance Dashboard</div>
+                <div class="project-title">🎮 Atari PlayStation Management Platform</div>
                 <div class="project-description">
-                    📊 Analyzed monthly sales (689.6M), orders (447K), and profit (38.62M) to monitor business trends. Detected a 19.7% drop in sales and identified high-performing categories for targeted promotions. 🎯
+                    A PlayStation venue platform with separate dashboards for customers and venue owners. It helps manage customer orders, gaming rooms, play time, and inventory from one system.
                 </div>
                 <div class="project-tech">
-                    <span class="tech-tag">📈 Power BI</span>
-                    <span class="tech-tag">🧮 DAX</span>
-                    <span class="tech-tag">📊 Excel</span>
+                    <span class="tech-tag">👤 Customer Dashboard</span>
+                    <span class="tech-tag">🛠️ Owner Dashboard</span>
+                    <span class="tech-tag">🎮 Rooms · Orders · Inventory</span>
                 </div>
-                <a href="https://github.com/Mohamed2003123/Marketing_Analysis" class="github-link" target="_blank">🔗 View on GitHub</a>
+                <a href="https://atari-hazel.vercel.app/login" class="github-link" target="_blank" rel="noopener noreferrer">🔗 Open Platform</a>
             </div>
 
             <div class="project-card">
-                <div class="project-title">🐦 Twitter Sentiment Analysis</div>
+                <div class="project-title">🎮 LUGX Online Game Store</div>
                 <div class="project-description">
-                    💭 Performed sentiment analysis on 800,000 tweets using logistic regression and NLP techniques. Enhanced classification accuracy by 12% after feature engineering and hyperparameter tuning. 🎯
+                    An online store for electronic games with a browsable catalog and detailed information for each game. Customers can purchase games and pay online.
                 </div>
                 <div class="project-tech">
-                    <span class="tech-tag">🐍 Python</span>
-                    <span class="tech-tag">🧠 NLP</span>
-                    <span class="tech-tag">🔬 Scikit-Learn</span>
-                    <span class="tech-tag">📝 NLTK</span>
+                    <span class="tech-tag">🎮 Game Catalog</span>
+                    <span class="tech-tag">📋 Game Details</span>
+                    <span class="tech-tag">💳 Online Payments</span>
                 </div>
-                <a href="https://github.com/Mohamed2003123/Sentiment-Analysis-on-Twitter-Data-Using-Logistic-Regression-and-NLP-Techniques" class="github-link" target="_blank">🔗 View on GitHub</a>
+                <a href="https://games-lugx.vercel.app/" class="github-link" target="_blank" rel="noopener noreferrer">🔗 Explore Store</a>
             </div>
 
             <div class="project-card">
-                <div class="project-title">📈 Sales Data Feature Engineering</div>
+                <div class="project-title">🎓 MUST Events, News & Gallery</div>
                 <div class="project-description">
-                    🎯 Analyzed city sales data and predicted trends using multiple regression techniques including Linear Regression, Random Forest, and Gradient Boost. Improved prediction accuracy through advanced feature engineering. 📊
+                    A university website showcasing upcoming events, the latest news, and a media gallery featuring university activities and highlights.
                 </div>
                 <div class="project-tech">
-                    <span class="tech-tag">🐍 Python</span>
-                    <span class="tech-tag">🤖 Machine Learning</span>
-                    <span class="tech-tag">🐼 Pandas</span>
-                    <span class="tech-tag">🔬 Scikit-Learn</span>
+                    <span class="tech-tag">📅 University Events</span>
+                    <span class="tech-tag">📰 Latest News</span>
+                    <span class="tech-tag">🖼️ Media Gallery</span>
                 </div>
-                <a href="https://github.com/Mohamed2003123/Feature-Engineering-and-Visualization-for-Sales-Data" class="github-link" target="_blank">🔗 View on GitHub</a>
+                <a href="https://luce-six.vercel.app/" class="github-link" target="_blank" rel="noopener noreferrer">🔗 Visit Website</a>
             </div>
+
+            <div class="project-card">
+                <div class="project-title">🛍️ Shopiklopik Local Marketplace</div>
+                <div class="project-description">
+                    A local marketplace connecting people with products and services in Fayoum. Visitors can browse listings across categories such as shopping, real estate, and lost and found, then contact sellers directly.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">🛍️ Shopping</span>
+                    <span class="tech-tag">🏠 Real Estate</span>
+                    <span class="tech-tag">🔎 Lost and Found</span>
+                </div>
+                <a href="https://shopiklopik.com/" class="github-link" target="_blank" rel="noopener noreferrer">🔗 Visit Marketplace</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">🥇 Dahab El Araby Gold & Silver Prices</div>
+                <div class="project-description">
+                    A precious-metals website showing daily gold and silver prices in Egypt, including buy and sell rates by karat. It also features gold and silver bars, coins, and jewelry listings.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">🥇 Gold Prices</span>
+                    <span class="tech-tag">🥈 Silver Prices</span>
+                    <span class="tech-tag">🔁 Buy and Sell Rates</span>
+                </div>
+                <a href="https://dahbelarby.com/" class="github-link" target="_blank" rel="noopener noreferrer">🔗 Visit site</a>
+            </div>
+
         </div>
     </section>
 
@@ -812,14 +883,17 @@
         <div class="contact-content">
             <p>🚀 Ready to turn your data challenges into opportunities? I'm always open to discussing new projects and collaborations. ✨</p>
             <div class="contact-links">
-                <a href="mailto:mmeeoodd2003@gmail.com" class="contact-link">
-                    📧 Email
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=moazzalsadeq784%40gmail.com" class="contact-link" aria-label="Email Moazz" title="Email" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
                 </a>
-                <a href="https://www.linkedin.com/in/mohammed-ubrahim" class="contact-link" target="_blank">
-                    💼 LinkedIn
+                <a href="tel:+201094406329" class="contact-link" aria-label="Call Moazz" title="Phone">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.79a2 2 0 0 1-.45 2.11L8.1 9.88a16 16 0 0 0 6 6l1.26-1.26a2 2 0 0 1 2.11-.45c.89.34 1.83.58 2.79.7A2 2 0 0 1 22 16.92z"/></svg>
                 </a>
-                <a href="https://github.com/mohamed2003487" class="contact-link" target="_blank">
-                    💻 GitHub
+                <a href="https://www.linkedin.com/in/moazz-alsadeq-792a3a275/" class="contact-link" aria-label="LinkedIn profile" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4"/></svg>
+                </a>
+                <a href="https://github.com/moazz784" class="contact-link" aria-label="GitHub profile" title="GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="4" r="2"/><circle cx="6" cy="20" r="2"/><circle cx="18" cy="8" r="2"/><path d="M6 6v12M8 6a6 6 0 0 0 6 6h2M16 10v4a6 6 0 0 1-6 6"/></svg>
                 </a>
             </div>
         </div>
